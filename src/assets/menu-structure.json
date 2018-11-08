@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Top Level Entry 1",
+    "icon": "user",
+    "link": ["/level1", "1"],
+    "children": [
+      {
+        "name": "Second Level Entry 1",
+        "icon": "user",
+        "link": ["/level1", "1", "level2", "1"],
+        "children": [
+          {
+            "name": "Third Level Entry 1",
+            "icon": "user",
+            "link": ["/level1", "1", "level2", "1", "level3", "1"],
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "Second Level Entry 2",
+        "icon": "user",
+        "link": ["/level1", "1", "level2", "2"],
+        "children": []
+      }
+    ]
+  },
+  {
+    "name": "Top Level Entry 2",
+    "icon": "user",
+    "link": ["/level1", "1"],
+    "children": []
+  },
+  {
+    "name": "Top Level Entry 3",
+    "icon": "user",
+    "link": ["/level1", "3"],
+    "children": [
+      {
+        "name": "Second Level Entry 1",
+        "icon": "user",
+        "link": ["/level1", "3", "level2", "1"],
+        "children": []
+      }
+    ]
+  }
+]

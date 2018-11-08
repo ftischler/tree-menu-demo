@@ -1,0 +1,12 @@
+<ng-template let-items="items" #menuItems>
+  <ul class="tree">
+    <ul *ngFor="let item of items">
+      <li>
+        <a [routerLink]="item.link">{{item.name}}</a>
+        <ng-container *ngTemplateOutlet="menuItems; context: {items: item.children}"></ng-container>
+      </li>
+    </ul>
+  </ul>
+</ng-template>
+
+<ng-container *ngTemplateOutlet="menuItems; context: {items: menuItems$ | async}"></ng-container>
